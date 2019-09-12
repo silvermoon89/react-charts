@@ -1,0 +1,180 @@
+@import '~antd/lib/style/themes/default.less';
+@import './utils.less';
+body {
+  height: 100%;
+  width: 100%;
+  font-family: '微软雅黑';
+}
+
+canvas {
+  display: block;
+}
+
+.bgImg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+}
+
+.chartWrapLeft {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  border: 2px solid rgba(0, 160, 233, 0.4);
+}
+
+.mapWrap {
+  position: relative;
+  border: 2px solid rgba(0, 160, 233, 0.4);
+}
+
+.mapTitle {
+  font-size: 14px;
+  color: #f4b41a;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.chartWrapRight {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  border: 2px solid rgba(0, 160, 233, 0.4);
+}
+
+.title {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  background: url('../imgs/titlebg.png') no-repeat;
+  background-position: center;
+  background-size: 95% 90%;
+  .name {
+    letter-spacing: 0.1em;
+    text-align: center;
+    font: 55px/1 "微软雅黑", sans-serif;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto; // margin-top: 15px;
+    color: #57b7ea;
+  }
+  .Torder {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 2.5%;
+    bottom: 10%;
+    .money {
+      margin-top: 5px;
+    }
+    h3 {
+      margin: 0;
+      color: rgb(77, 166, 213);
+      font-size: 14px;
+      span {
+        margin: 0;
+        color: #f4b41a;
+      }
+    }
+    p {
+      margin: 0;
+      font-size: 12px;
+      color: rgb(77, 166, 213);
+      span {
+        margin: 0;
+        font-size: 12px;
+        color: #f4b41a;
+      }
+    }
+  }
+  .logo {
+    position: absolute;
+    left: 2.5%;
+    bottom: 10%;
+    img {
+      width: 150px;
+      height: 40px;
+    }
+    p {
+      margin-top: 10px;
+      font-family: '微软雅黑';
+      font-size: 15px;
+      color: rgb(77, 166, 213)
+    }
+  }
+}
+
+.parkCharts {
+  position: absolute;
+  left: 45%;
+  bottom: 20px;
+  height: 20px;
+  h2 {
+    margin-bottom: 20px;
+    color: #f4b41a;
+    font-family: '微软雅黑';
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: @screen-xxl) {
+  .title {
+    .name {
+      font-size: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xl) {
+  .title {
+    padding-top: 35px;
+    .name {
+      font: 30px/1 "微软雅黑", sans-serif;
+    }
+    .Torder{
+      h3{
+        font-size: 12px;
+      }
+      p{
+        font-size: 10px;
+        span{
+          font-size: 10px;
+        }
+      }
+    }
+    .logo {
+      left: 2.5%;
+      bottom: 0;
+      img {
+        width: 120px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .title {
+    padding-top: 50px;
+    .name {
+      font: 30px/1 "微软雅黑", sans-serif;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .title {
+    display: none !important;
+  }
+  .parkCharts {
+    display: none;
+  }
+}

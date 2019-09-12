@@ -1,0 +1,64 @@
+[
+  {
+    "time": "Jul",
+    "order": 408654,
+    "money": 5845155
+  },
+  {
+    "time": "Aug",
+    "order": 444686,
+    "money": 6684559
+  },
+  {
+    "time": "Sep",
+    "order": 476809,
+    "money": 7624339
+  },
+  {
+    "time": "Oct",
+    "order": 515592,
+    "money": 7780913
+  },
+  {
+    "time": "Nov",
+    "order": 520385,
+    "money": 9330119
+  },
+  {
+    "time": "Dec",
+    "order": 550531,
+    "money": 8487923
+  },
+  {
+    "time": "Jan",
+    "order": 563377,
+    "money": 9453059
+  },
+  {
+    "time": "Feb",
+    "order": 621178,
+    "money": 10684356
+  },
+  {
+    "time": "Mar",
+    "order": 531857,
+    "money": 9805690
+  },
+  {
+    "time": "Apr",
+    "order": 691328,
+    "money": 12752498
+  },
+  
+  {
+    "time": "May",
+    "order": 668913,
+    "money": 12024689
+  },
+  
+  {
+    "time": "Jun",
+    "order": 718691,
+    "money": 11893270
+  }
+]
